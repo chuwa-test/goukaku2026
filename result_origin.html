@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合格発表 | 令和X年度 入学試験</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #f7f9fc; --bg-card: #ffffff; --text-main: #333333; --text-sub: #666666; --border-color: #e2e8f0;
+            --col-dept1: #c62828; /* 赤系 */
+            --col-dept2: #bfa004; /* 黄色系(黄金色) */
+            --col-dept3: #1565c0; /* 青系 */
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Noto Sans JP', sans-serif; background-color: var(--bg-body); color: var(--text-main); margin: 0; line-height: 1.6; }
+        header { background-color: var(--bg-card); padding: 20px; text-align: center; border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        h1 { font-size: 1.4rem; margin: 0 0 5px 0; font-weight: 700; }
+        .date { font-size: 0.85rem; color: var(--text-sub); margin-bottom: 15px; }
+        .nav-container { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .nav-btn { text-decoration: none; font-size: 0.8rem; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #fff; border: 1px solid #ddd; transition: all 0.2s; }
+        .nav-btn.dept1 { color: var(--col-dept1); border-color: var(--col-dept1); background: rgba(198, 40, 40, 0.05); }
+        .nav-btn.dept2 { color: var(--col-dept2); border-color: var(--col-dept2); background: rgba(191, 160, 4, 0.05); }
+        .nav-btn.dept3 { color: var(--col-dept3); border-color: var(--col-dept3); background: rgba(21, 101, 192, 0.05); }
+        .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+        .intro-msg { text-align: center; margin-bottom: 40px; font-size: 0.9rem; color: var(--text-sub); }
+        .dept-section { background-color: var(--bg-card); margin-bottom: 40px; padding: 30px 25px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border-top: 5px solid #ccc; }
+        #dept1 { border-top-color: var(--col-dept1); } #dept2 { border-top-color: var(--col-dept2); } #dept3 { border-top-color: var(--col-dept3); }
+        .dept-title { font-size: 1.3rem; margin: 0 0 25px 0; padding-bottom: 10px; border-bottom: 1px solid #f0f0f0; font-weight: 700; }
+        #dept1 .dept-title { color: var(--col-dept1); } #dept2 .dept-title { color: var(--col-dept2); } #dept3 .dept-title { color: var(--col-dept3); }
+        .number-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 12px; }
+        .number-item { background-color: #f8f9fa; padding: 12px 0; text-align: center; font-size: 1.1rem; border: 1px solid #edf2f7; border-radius: 4px; font-weight: 500; font-variant-numeric: tabular-nums; }
+        footer { text-align: center; padding: 40px 20px; color: var(--text-sub); font-size: 0.8rem; border-top: 1px solid var(--border-color); margin-top: 60px; }
+        @media (max-width: 600px) { .nav-container { flex-direction: column; } .nav-btn { justify-content: center; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>令和X年度 入学試験 合格発表</h1>
+        <div class="date">発表日時：202X年X月X日 10:00</div>
+        <nav class="nav-container">
+            <a href="#dept1" class="nav-btn dept1">あん摩マッサージ指圧、はり、きゅう科</a>
+            <a href="#dept2" class="nav-btn dept2">はり、きゅう科</a>
+            <a href="#dept3" class="nav-btn dept3">柔道整復科</a>
+        </nav>
+    </header>
+    <div class="container">
+        <p class="intro-msg">厳正なる審査の結果、以下の受験番号の者を合格とします。</p>
+
+        <section id="dept1" class="dept-section">
+            <h2 class="dept-title">あん摩マッサージ指圧、はり、きゅう科</h2>
+            <div class="number-list">
+                <!-- 番号リスト -->
+                <div class="number-item">1001</div>
+                <div class="number-item">1002</div>
+            </div>
+        </section>
+
+        <section id="dept2" class="dept-section">
+            <h2 class="dept-title">はり、きゅう科</h2>
+            <div class="number-list">
+                <!-- 番号リスト -->
+                <div class="number-item">2001</div>
+                <div class="number-item">2002</div>
+            </div>
+        </section>
+
+        <section id="dept3" class="dept-section">
+            <h2 class="dept-title">柔道整復科</h2>
+            <div class="number-list">
+                <!-- 番号リスト -->
+                <div class="number-item">3001</div>
+                <div class="number-item">3002</div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>〇〇専門学校 入試事務局</p>
+    </footer>
+</body>
+</html>
